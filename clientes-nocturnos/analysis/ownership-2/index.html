@@ -1,0 +1,94 @@
+
+<html lang="es">
+	<meta charset="UTF-8">
+<head>
+
+    
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/less/styles.less">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>   
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+
+<style>
+
+	</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="row">
+				<div id="leyenda" class="col-md-2">
+					<h2>New clients</h2>
+					<h1>Customer Journey</h1><hr>
+					<h3><small> BBVA Data & Analytics</small><br><i class="fa fa-stop azul0"></i> <i class="fa fa-stop azul1" ></i> <i class="fa fa-stop azul2"></i> Legend</h3>
+			
+					<svg>
+						<g transform="translate(-20,0)">
+							<rect x="120" y="20" width="100" height="100" class="azulclaro"/>
+							<rect x="120" y="20" width="60" height="90" class="rosa"/>
+							<rect x="120" y="20" width="30" height="30" class="amarillo"/>
+							<line x1="110" y1="20" x2="110" y2="118" stroke="#b5e5f9" stroke-width="1"/>
+							<circle cx="110" cy="120" r="1.5" fill="#b5e5f9"/>
+							<line x1="110" y1="20" x2="110" y2="110" stroke="#c8175e" stroke-width="1"/>
+							<circle cx="110" cy="110" r="1.5" fill="#c8175e"/>
+							<line x1="110" y1="20" x2="110" y2="50" stroke="#fdbd2c" stroke-width="1"/>
+							<circle cx="110" cy="50" r="1.5" fill="#fdbd2c"/>
+			
+							<text x="20" y="115" class="azulclaro">Nº usuarios</text>
+							<text x="20" y="80" class="rosa"  style="font-weight:900">Abandonos</text>
+							<text x="20" y="35" class="amarillo" >Abandonos</text>
+							<text x="20" y="50" class="amarillo">por error</text>
+							</g>
+							<g transform="translate(0,40)">
+							<circle cx="90" cy="150" r="5" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="165" r="8" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="180" r="3" fill="#b5e5f9" ></circle>
+							<circle cx="90" cy="195" r="2" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="215" r="5" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="230" r="3" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="245" r="7" fill="#b5e5f9"></circle>
+							<circle cx="90" cy="260" r="3" fill="#b5e5f9"></circle>
+				
+							<circle cx="110" cy="150" r="2" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="165" r="5" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="180" r="3" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="195" r="8" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="215" r="2" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="230" r="5" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="245" r="7" fill="#b5e5f9"></circle>
+							<circle cx="110" cy="260" r="2" fill="#b5e5f9"></circle>
+
+
+							<text x="0" y="150" class="white">TIPOLOGÍA</text>	
+							<text x="0" y="165" class="white">de errores</text>	
+
+							<text x="0" y="210" class="azulclaro">Encontrados</text>	
+							<text x="0" y="225" class="azulclaro">al llegar (%)</text>	
+				
+							<text x="130" y="210" class="azulclaro">Motivo</text>	
+							<text x="130" y="225" class="azulclaro">de abandono (%)</text>	
+						</g>
+					</svg>
+			
+				</div><!--fin leyenda-->
+				<div id="grafico" class="col-md-7"></div>
+					<div  class="col-md-3">
+						<div class="row" id="texto"></div>
+					</div>
+			</div>
+		</div><!--fin main-->
+
+		<script src="src/main-mit.js"></script>
+	</body>
+</html>
