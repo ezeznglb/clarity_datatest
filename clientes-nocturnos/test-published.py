@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Test published"""
+"""Test_published"""
 import clarity.models as cModel
 from clarity.models import Query as cQuery
 from clarity.core import Clarity
